@@ -1,0 +1,17 @@
+{
+  "nodeModulesDir": "manual",
+  "tasks": {
+    "dev": "deno run npm:next dev",
+    "build": "deno run -A npm:next build",
+    "start": "deno run -A npm:next start",
+    "lint": "deno run -A npm:next lint"
+  },
+  "imports": {
+    "@types/node": "npm:@types/node@^22.13.13",
+    "@types/react": "npm:@types/react@^19.0.12",
+    "next": "npm:next@^15.2.4",
+    "react": "npm:react@^19.0.0",
+    "react-dom": "npm:react-dom@^19.0.0",
+    "typescript": "npm:typescript@^5.8.2"
+  }
+}

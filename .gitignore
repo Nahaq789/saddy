@@ -1,0 +1,85 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+
+# Deno specific
+/.deno/
+/deno_modules/
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+/dist
+
+# Vercel
+.vercel
+.turbo
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+.pdb
+.mdb
+
+# Local env files
+.env*.local
+.env
+.env.development
+.env.test
+.env.production
+
+# IDEs and editors
+/.idea
+/.vscode
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
+
+# Compiled output
+*.min.js
+*.min.css
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
