@@ -1,0 +1,96 @@
+/* src/app/auth/login/login.module.css */
+/* これをNext.jsのページコンポーネントでインポートして使用します */
+
+.container {
+	@apply min-h-screen flex flex-col items-center justify-center bg-gray-950 px-6 py-12;
+}
+
+.logoContainer {
+	@apply flex flex-col items-center mb-12;
+}
+
+.logoGraphic {
+	@apply relative w-16 h-16 mb-4;
+}
+
+.logoBar1 {
+	@apply absolute w-4 h-12 rounded-full bg-cyan-400 right-0 rotate-12;
+}
+
+.logoBar2 {
+	@apply absolute w-4 h-12 rounded-full bg-purple-500 left-3 -rotate-6;
+}
+
+.logoBar3 {
+	@apply absolute w-4 h-12 rounded-full bg-blue-400 left-0 rotate-12;
+}
+
+.appName {
+	@apply text-3xl font-medium text-white;
+}
+
+.welcomeText {
+	@apply mb-8;
+}
+
+.welcomeHeading {
+	@apply text-2xl font-semibold text-white mb-2;
+}
+
+.welcomeSubtext {
+	@apply text-cyan-400;
+}
+
+.formContainer {
+	@apply space-y-5 w-full max-w-sm;
+}
+
+.inputGroup {
+	@apply space-y-1;
+}
+
+.inputLabel {
+	@apply block text-sm font-medium text-gray-400;
+}
+
+.textInput {
+	@apply w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white 
+  placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500;
+}
+
+.passwordContainer {
+	@apply relative;
+}
+
+.visibilityButton {
+	@apply absolute inset-y-0 right-0 flex items-center pr-4;
+}
+
+.formActions {
+	@apply flex items-center justify-between pt-2;
+}
+
+.forgotPassword {
+	@apply text-sm text-indigo-400 hover:text-indigo-300;
+}
+
+.loginButton {
+	@apply px-8 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-full 
+  focus:outline-none focus:ring-2 focus:ring-gray-500;
+}
+
+.registerPrompt {
+	@apply mt-12 text-center;
+}
+
+.registerText {
+	@apply text-gray-400 inline;
+}
+
+.registerLink {
+	@apply text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center;
+}
+
+.arrowIcon {
+	@apply h-5 w-5 ml-1;
+}

@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
-}
-
-@theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
+  --app-bg-primary: #1A1F24;
+  --app-bg-secondary: #101213;
+  
+  --app-text-primary: #FFFFFF;
+  --app-text-secondary: #C0C0C0;
+  --app-text-muted: #8D8D8D;
+  
+  --app-accent-teal: #39D2C0;
+  --app-accent-teal-hover: #32C0AF;
+  --app-accent-purple: #9489F5;
+  --app-accent-purple-hover: #7A6EE6;
+  --app-accent-blue: #3498DB;
+  
+  --app-form-bg: var(--app-bg-secondary);
+  --app-form-border: transparent;
+  --app-form-focus-ring: var(--app-accent-purple);
+  
+  --app-success: #4CAF50;
+  --app-warning: #FFD600;
+  --app-error: #F44336;
+  --app-info: #2196F3;
 }
 
 body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--app-bg-primary);
+  color: var(--app-text-primary);
+}
+
+@layer components {
+  .app-input {
+    @apply w-full px-4 py-3 rounded-md focus:outline-none;
+    background-color: var(--app-form-bg);
+    border: 1px solid var(--app-form-border);
+    color: var(--app-text-primary);
+  }
+  
+  .app-input:focus {
+    @apply ring-1;
+    --tw-ring-color: var(--app-form-focus-ring);
+  }
+  
+  .app-input::placeholder {
+    color: var(--app-text-muted);
+  }
+  
+  .app-label {
+    @apply block mb-1;
+    color: var(--app-text-secondary);
+  }
+  
+  .app-btn-primary {
+    @apply px-5 py-2 rounded-full focus:outline-none;
+    background-color: var(--app-accent-teal);
+    color: black;
+  }
+  
+  .app-btn-primary:hover:not(:disabled) {
+    background-color: var(--app-accent-teal-hover);
+  }
+  
+  .app-btn-primary:disabled {
+    @apply opacity-60 cursor-not-allowed;
+  }
+  
+  .app-btn-secondary {
+    @apply px-5 py-2 rounded-full focus:outline-none;
+    background-color: var(--app-accent-purple);
+    color: white;
+  }
+  
+  .app-btn-secondary:hover:not(:disabled) {
+    background-color: var(--app-accent-purple-hover);
+  }
+  
+  .app-link {
+    color: var(--app-accent-purple);
+  }
+  
+  .app-link:hover {
+    color: var(--app-accent-purple-hover);
+  }
+  
+  .app-text-accent {
+    color: var(--app-accent-teal);
+  }
+  
+  .app-heading-large {
+    @apply text-2xl font-bold;
+  }
+  
+  .app-heading-medium {
+    @apply text-xl font-semibold;
+  }
 }
