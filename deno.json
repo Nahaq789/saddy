@@ -1,7 +1,7 @@
 {
   "nodeModulesDir": "manual",
   "tasks": {
-    "dev": "deno run npm:next dev",
+    "dev": "deno run -A npm:next dev",
     "build": "deno run -A npm:next build",
     "start": "deno run -A npm:next start",
     "lint": "deno run -A npm:next lint"

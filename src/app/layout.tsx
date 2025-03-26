@@ -6,10 +6,10 @@ export default function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <body>
-      <hr />
-      <div>{children}</div>
-      <hr />
-    </body>
+    <html>
+      <body>
+        <div>{children}</div>
+      </body>
+    </html>
   );
 }
