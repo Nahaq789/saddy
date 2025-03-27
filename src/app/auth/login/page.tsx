@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import AuthInput from '@/components/auth/input';
 
 export default function LoginPage() {
 	const [showPassword, setShowPassword] = useState(false);
@@ -40,9 +41,12 @@ export default function LoginPage() {
 						<label htmlFor="email" className="app-label">
 							Email Address
 						</label>
-						<input
-							id="email"
+						<AuthInput
 							type="email"
+							label='Email Address'
+							value="Enter your email..."
+							onChange={(e) => e.target.value}
+							isPassword={false}
 							placeholder="Enter your email..."
 							className="app-input"
 						/>
