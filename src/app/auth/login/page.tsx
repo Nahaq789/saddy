@@ -42,13 +42,11 @@ export default function LoginPage() {
 							Email Address
 						</label>
 						<AuthInput
-							type="email"
-							label='Email Address'
-							value="Enter your email..."
+							className='add-input'
+							type="text"
 							onChange={(e) => e.target.value}
 							isPassword={false}
 							placeholder="Enter your email..."
-							className="app-input"
 						/>
 					</div>
 
